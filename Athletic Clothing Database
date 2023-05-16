@@ -1,0 +1,27 @@
+
+--Create a athletic clothing database
+CREATE TABLE athletic_clothing (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, size TEXT);
+
+INSERT INTO athletic_clothing VALUES (1, "sweatshirt", 50, "small");
+INSERT INTO athletic_clothing VALUES (2, "sweatshirt", 50, "medium");
+INSERT INTO athletic_clothing VALUES (3, "sweatshirt", 50, "large");
+INSERT INTO athletic_clothing VALUES (4, "sweatshirt", 50, "extra large");
+INSERT INTO athletic_clothing VALUES (5, "sports bra", 22, "small");
+INSERT INTO athletic_clothing VALUES (6, "sports bra", 22, "medium");
+INSERT INTO athletic_clothing VALUES (7, "sports bra", 22, "large");
+INSERT INTO athletic_clothing VALUES (8, "sports bra", 22, "extra large");
+INSERT INTO athletic_clothing VALUES (9, "leggings", 45, "small");
+INSERT INTO athletic_clothing VALUES (10, "leggings", 45, "medium");
+INSERT INTO athletic_clothing VALUES (11, "leggings", 45, "large");
+INSERT INTO athletic_clothing VALUES (12, "leggings", 45, "extra large");
+INSERT INTO athletic_clothing VALUES (13, "shorts", 18, "small");
+INSERT INTO athletic_clothing VALUES (14, "shorts", 18, "medium");
+INSERT INTO athletic_clothing VALUES (15, "shorts", 18, "large");
+INSERT INTO athletic_clothing VALUES (16, "shorts", 18, "extra large");
+
+
+--display all of the database
+SELECT * FROM athletic_clothing;
+
+--what is maxium price in database? 
+SELECT MAX(price) FROM athletic_clothing LIMIT 1;
